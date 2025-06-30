@@ -163,7 +163,7 @@ function startNewRound() {
     }
 
     score = 0;
-    timeLeft = 60; // Reset time
+    timeLeft = 30; // Reset time
     gameActive = true;
     updateScoreDisplay();
     timerDisplay.textContent = `Time: ${timeLeft}`;
