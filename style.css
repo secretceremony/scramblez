@@ -1,0 +1,192 @@
+/* Custom styles for the Scramble Word Game */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Intro Screen styles */
+.intro-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid #333;
+}
+
+/* Game Container styles */
+.game-container {
+    background-color: #1a1a1a; /* Darker grey for the container */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid #333; /* Slightly lighter grey border */
+}
+
+.scrambled-word {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #FFD700; /* Yellow accent for the scrambled word */
+    margin-bottom: 20px;
+    word-wrap: break-word; /* Ensure long words wrap */
+}
+
+.hint-text { /* New style for hint text */
+    font-size: 0.95rem;
+    color: #bbb; /* Lighter grey for hint */
+    min-height: 20px; /* Reserve space */
+    margin-top: -10px; /* Pull it closer to the scrambled word */
+    margin-bottom: 10px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow input and button to wrap on smaller screens */
+}
+
+.input-area input {
+    flex-grow: 1; /* Allow input to take available space */
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 2px solid #555; /* Grey border for input */
+    background-color: #333; /* Dark grey input background */
+    color: #fff;
+    font-size: 1.2rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    max-width: 300px; /* Limit input width */
+}
+
+.input-area input:focus {
+    border-color: #FFD700; /* Yellow border on focus */
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.game-button {
+    padding: 12px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.game-button.primary {
+    background-color: #FFD700; /* Yellow primary button */
+    color: #333;
+}
+
+.game-button.primary:hover {
+    background-color: #e6c200; /* Darker yellow on hover */
+    transform: translateY(-2px);
+}
+
+.game-button.secondary {
+    background-color: #555; /* Grey secondary button */
+    color: #fff;
+}
+
+.game-button.secondary:hover {
+    background-color: #666; /* Lighter grey on hover */
+    transform: translateY(-2px);
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    border-top: 1px solid #333;
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    min-height: 25px; /* Reserve space for messages */
+    color: #FFD700; /* Yellow for messages */
+}
+
+/* Modal for messages */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    margin: auto;
+    padding: 30px;
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #FFD700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Utility class to hide elements */
+.hidden {
+    display: none !important;
+}
