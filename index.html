@@ -1,13 +1,10 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scramble Word Game</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,9 +23,7 @@
         </div>
 
         <div id="scrambledWordDisplay" class="scrambled-word"></div>
-        <div id="hintDisplay" class="hint-text"></div> <!-- New: Div for hints -->
-
-        <div class="input-area">
+        <div id="hintDisplay" class="hint-text"></div> <div class="input-area">
             <input type="text" id="guessInput" placeholder="Enter your guess" autocomplete="off" class="rounded-lg">
             <button id="submitBtn" class="game-button primary">Submit</button>
         </div>
@@ -41,7 +36,6 @@
         <div id="messageDisplay" class="message"></div>
     </div>
 
-    <!-- The Modal -->
     <div id="gameModal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
@@ -50,63 +44,6 @@
         </div>
     </div>
 
-    <!-- Link to external JavaScript file -->
     <script src="script.js" defer></script>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scramble Word Game</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="intro-screen" id="introScreen">
-        <h1 class="text-4xl font-bold mb-6 text-white">Scramble Word Challenge!</h1>
-        <p class="text-lg mb-8 text-gray-300">Unscramble the words and test your vocabulary!</p>
-        <button id="playGameBtn" class="game-button primary text-2xl px-8 py-4">Play Game</button>
-    </div>
-
-    <div class="game-container hidden" id="gameContainer">
-        <h1 class="text-3xl font-bold mb-4 text-white">Scramble Word Game</h1>
-
-        <div class="game-info">
-            <div id="scoreDisplay">Score: 0</div>
-            <div id="timerDisplay">Time: 60</div>
-        </div>
-
-        <div id="scrambledWordDisplay" class="scrambled-word"></div>
-        <div id="hintDisplay" class="hint-text"></div> <!-- New: Div for hints -->
-
-        <div class="input-area">
-            <input type="text" id="guessInput" placeholder="Enter your guess" autocomplete="off" class="rounded-lg">
-            <button id="submitBtn" class="game-button primary">Submit</button>
-        </div>
-
-        <div class="button-group">
-            <button id="startGameBtn" class="game-button primary">Start New Round</button>
-            <button id="skipBtn" class="game-button secondary">Skip</button>
-        </div>
-
-        <div id="messageDisplay" class="message"></div>
-    </div>
-
-    <!-- The Modal -->
-    <div id="gameModal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <p id="modalMessage" class="text-xl"></p>
-            <button id="modalCloseBtn" class="game-button primary mt-4">OK</button>
-        </div>
-    </div>
-
-    <!-- Link to external JavaScript file -->
-    <script src="script.js" defer></script>
-</body>
->>>>>>> 3ed24055b75f4061c7cda16fbbbf72d24e0a99fe
 </html>
