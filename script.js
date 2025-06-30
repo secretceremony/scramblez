@@ -6,7 +6,7 @@ let currentWord = '';
 let currentHint = '';
 let scrambledWord = '';
 let score = 0;
-let timeLeft = 60; // Initial time in seconds
+let timeLeft = 30; // Initial time in seconds
 let gameInterval;
 let gameActive = false;
 
