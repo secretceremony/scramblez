@@ -29,10 +29,6 @@ const modalMessage = document.getElementById('modalMessage');
 const modalCloseBtn = document.getElementById('modalCloseBtn');
 const closeButton = document.querySelector('.close-button');
 
-// Note: The 'hintBtn' element is no longer directly referenced in JS as hint is automatic.
-// You should remove the 'hintBtn' from index.html if you want to remove the button itself.
-
-
 /**
  * Shuffles the letters of a word randomly.
  * @param {string} word - The word to scramble.
